@@ -1,4 +1,4 @@
-pytorch
-torchvision
-urllib3
+torch==1.8.0
+torchvision==0.9.0
+urllib3==1.26.6
 git+https://github.com/facebookresearch/detectron2.git
