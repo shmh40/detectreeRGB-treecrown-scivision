@@ -1,6 +1,6 @@
 name: test
 url: https://github.com/acocac/scivision-treecrown-plugin
-import: src
+import: scivision_treecrown_plugin
 model: DetectreeRGB
 args:
     model_source: zenodo
