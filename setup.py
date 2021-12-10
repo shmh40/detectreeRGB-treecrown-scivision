@@ -16,6 +16,8 @@ setup(
     author_email="acocac@turing.ac.uk",
     url="https://github.com/acocac/scivision-treecrown-plugin",
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=[
+        "detectron2 @ git+https://github.com/facebookresearch/detectron2.git"
+    ],
     python_requires=">=3.7",
 )
