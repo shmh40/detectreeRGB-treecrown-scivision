@@ -1,10 +1,5 @@
 #!/usr/bin/env python
-import os
-
 from setuptools import find_packages, setup
-
-os.environ["CC"] = "gcc-5.5"
-os.environ["CXX"] = "gcc-5.5"
 
 requirements = []
 with open("requirements.txt") as f:
