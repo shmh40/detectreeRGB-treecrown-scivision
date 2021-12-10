@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import os
+
 from setuptools import find_packages, setup
 
 requirements = []
@@ -7,6 +9,9 @@ with open("requirements.txt") as f:
         stripped = line.split("#")[0].strip()
         if len(stripped) > 0:
             requirements.append(stripped)
+
+os.environ["CC"] = "gcc-7"
+os.environ["CXX"] = "gcc-7"
 
 setup(
     name="scivision_treecrown_plugin",
