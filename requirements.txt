@@ -1,5 +1,1 @@
 pycurl
-urllib3==1.26.6
-detectron2@git+https://github.com/facebookresearch/detectron2.git@v0.6#egg=detectron2
-intake
-intake_zenodo_fetcher@git+https://github.com/ESM-VFC/intake_zenodo_fetcher.git@v2021.02.06.1
