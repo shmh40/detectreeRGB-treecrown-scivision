@@ -50,7 +50,7 @@ class DetectreeRGB:
 
     def predict(self, image: np.ndarray) -> np.ndarray:
 
-        y = self.pretrained_model.predictor(image)
+        y = self.pretrained_model(image)
         return y
 
 
