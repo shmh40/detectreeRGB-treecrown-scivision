@@ -1,6 +1,24 @@
 #!/usr/bin/env python
 from setuptools import find_packages, setup
 
+try:
+    import torch
+    import torchvision
+
+    print(torch.__version__)
+    print(torchvision.__version__)
+except ImportError:
+    raise Exception(
+        """
+You must install PyTorch and torchvision prior to installing:
+!pip -q install torch==1.8.0
+!pip -q install torchvision==0.9.0
+
+For more information:
+    https://pytorch.org/get-started/locally/
+    """
+    )
+
 requirements = []
 with open("requirements.txt") as f:
     for line in f:
