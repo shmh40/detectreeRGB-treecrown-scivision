@@ -1,19 +1,25 @@
-import cv2
 import numpy as np
-from PIL import Image
 
 from scivision_treecrown_plugin import DetectreeRGB
 
-# save as png
-filepath = "tile.png"
-
-rgb = np.random.randint(255, size=(900, 800, 3), dtype=np.uint8)
-
-img = Image.fromarray(rgb)
-img.save(filepath)
-
-X = cv2.imread(filepath)
+# create synthetic image
+X = np.random.randint(255, size=(900, 800, 3), dtype=np.uint8)
 
 model = DetectreeRGB()
 y = model.predict(X)
 print(y["instances"])
+
+
+# test with scivision
+# from intake_zenodo_fetcher import download_zenodo_files_for_entry
+# from scivision.io import load_dataset
+#
+# cat = load_dataset(
+#     "https://github.com/acocac/scivision-forest-datasets/drone_tropics.yml"
+# )
+#
+# download_zenodo_files_for_entry(cat["sepilok_rgb"], force_download=False)
+#
+# tc_rgb = cat["sepilok_rgb"].to_dask()
+#
+# y = model.predict(tc_rgb)
