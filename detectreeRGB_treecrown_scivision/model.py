@@ -54,7 +54,7 @@ class DetectreeRGB:
         v = v.draw_instance_predictions(self.y["instances"].to("cpu"))
         imagecv2 = cv2.cvtColor(v.get_image()[:, :, :], cv2.COLOR_BGR2RGB)
 
-        plt.figure(figsize=(10, 10))
+        plt.figure(figsize=(14, 14))
         plt.imshow(imagecv2)
         plt.show()
 
