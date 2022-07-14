@@ -59,7 +59,7 @@ class DetectreeRGB:
         plt.axis('off')
         plt.show()
 
-    def predict(self, image: np.ndarray) -> np.ndarray:
+    def predict(self, image: np.ndarray, plot=False) -> np.ndarray:
         # subset RGB bands
         R = image[0]
         G = image[1]
@@ -77,7 +77,8 @@ class DetectreeRGB:
 
         self.y = self.pretrained_model(self.X)
 
-        self.show_output()
+        if plot:
+            self.show_output()
 
         return self.y
 
