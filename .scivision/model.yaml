@@ -1,0 +1,9 @@
+name: detectreeRGB_treecrown_scivision
+url: https://github.com/acocac/detectreeRGB-treecrown-scivision
+import: detectreeRGB_treecrown_scivision
+model: DetectreeRGB
+prediction_fn:
+    call: predict
+    args:
+        X: image
+    kwargs: None
