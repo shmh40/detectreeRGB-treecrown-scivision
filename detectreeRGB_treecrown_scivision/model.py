@@ -55,6 +55,7 @@ class DetectreeRGB:
         imagecv2 = cv2.cvtColor(v.get_image()[:, :, :], cv2.COLOR_BGR2RGB)
 
         plt.figure(figsize=(14, 14))
+        plt.title('Predictions', fontsize='xx-large')
         plt.imshow(imagecv2)
         plt.axis('off')
         plt.show()
