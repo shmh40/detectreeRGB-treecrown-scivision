@@ -1,6 +1,6 @@
 import numpy as np
 
-from scivision_treecrown_plugin import DetectreeRGB
+from detectreeRGB_treecrown_scivision import DetectreeRGB
 
 # create synthetic image
 X = np.random.randint(255, size=(900, 800, 3), dtype=np.uint8)
@@ -11,11 +11,11 @@ print(y["instances"])
 
 
 # test with scivision
-# from intake_zenodo_fetcher import download_zenodo_files_for_entry
 # from scivision.io import load_dataset
+# from intake_zenodo_fetcher import download_zenodo_files_for_entry
 #
 # cat = load_dataset(
-#     "https://github.com/acocac/scivision-forest-datasets/drone_tropics.yml"
+#     ".scivision/data.yaml"
 # )
 #
 # download_zenodo_files_for_entry(cat["sepilok_rgb"], force_download=False)
