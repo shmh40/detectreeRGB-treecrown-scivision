@@ -56,6 +56,7 @@ class DetectreeRGB:
 
         plt.figure(figsize=(14, 14))
         plt.imshow(imagecv2)
+        plt.axis('off')
         plt.show()
 
     def predict(self, image: np.ndarray) -> np.ndarray:
