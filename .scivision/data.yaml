@@ -1,8 +1,8 @@
 sources:
   sepilok_rgb:
-    driver: intake_xarray.raster.RasterIOSource
+    driver: rasterio
     description: 'NERC RGB images of Sepilok, Sabah, Malaysia (collection)'
     metadata:
       zenodo_doi: "10.5281/zenodo.5494629"
     args:
-      urlpath: "{{ CATALOG_DIR }}/input/tiff/Sep_2014_RGB_602500_646600.tif"
+      urlpath: "Sep_2014_RGB_602500_646600.tif"
