@@ -9,12 +9,12 @@ with open("requirements.txt") as f:
             requirements.append(stripped)
 
 setup(
-    name="scivision_treecrown_plugin",
+    name="detectreeRGB_treecrown_scivision",
     version="0.0.1",
-    description="scivision treecrown plugin",
-    author="Alejandro Coca-Castro",
-    author_email="acocac@turing.ac.uk",
-    url="https://github.com/acocac/scivision-treecrown-plugin",
+    description="detectreeRGB_treecrown_scivision",
+    author="Sebastian Hickman",
+    author_email="shmh4@cam.ac.uk",
+    url="https://github.com/acocac/detectreeRGB-treecrown-scivision",
     packages=find_packages(),
     install_requires=requirements,
     python_requires=">=3.7",
