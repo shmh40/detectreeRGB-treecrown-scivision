@@ -1,2 +1,3 @@
-# detectreeRGB-treecrown-scivision
-Example model plugin for applying a pretrained `detectreeRGB` model to delineate tree crowns from from a top-down RGB image, captured by drone, aircraft or satellite.
+# detectreeRGB in `scivision`
+
+This repository contains the refactored code for [scivision](https://github.com/alan-turing-institute/scivision). The original source code of detectreeRGB is available at https://github.com/shmh40/detectreeRGB. 
